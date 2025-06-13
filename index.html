@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Prado - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+    <title>Georgy Georgy - Data Sorcerer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="">
-                    <img src="" alt="">
-                </a>
+                <span>Georgy</span>
             </div>
-
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
             </ul>
-
             <div class="nav-actions">
-                <a href="#contact" class="btn-contato">Contato</a>
-                <button class="theme-toggle" id="theme-Toggle">
+                <a href="#contact" class="btn-contact">Contact Me</a>
+                <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-sun"></i>
                 </button>
             </div>
-
-            <div class="hamburguer" id="hamburguer">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -40,5 +35,250 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Georgy Georgy" class="avatar-img">
+                </div>
+                <h1 class="hero-title">Georgy Georgy</h1>
+                <p class="hero-subtitle">Data Sorcerer ✨</p>
+                <p class="hero-description">
+                    As a passionate data analyst with expertise in machine learning, AI, and data 
+                    analytics, I thrive on transforming raw data into actionable insights that drive 
+                    business success. With a keen eye for detail and a commitment to excellence, I bring 
+                    unparalleled analytical prowess that drives innovation.
+                </p>
+                <a href="#contact" class="btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hi there! I'm Data Wizard, a data scientist specializing in data analytics, predictive modeling, natural 
+                    language processing, machine learning, and AI chatbots. With a passion for uncovering insights from 
+                    complex datasets, I've dedicated my career to helping businesses make informed decisions and stay ahead in 
+                    today's data-driven world.
+                </p>
+                <p>
+                    Having a blend of technical expertise, business acumen, and creative problem-solving skills, I take immense 
+                    joy in every project. Whether it's uncovering hidden patterns, predicting future trends, or automating 
+                    processes with AI, I'm here to help you harness the full potential of your data.
+                </p>
+                <p>
+                    Let's turn your data into your competitive advantage. Ready to unlock the insights that will propel your business 
+                    and let's start unlocking the power of your data today!
+                </p>
+                <button class="btn-secondary">Download Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle">My Services</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics & Visualization</h3>
+                    <p>Transform complex data into clear, actionable insights through advanced analytics and compelling visualizations that drive informed decision-making.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Predictive Analytics and Forecasting</h3>
+                    <p>Leverage statistical models and machine learning algorithms to predict future trends, optimize operations, and anticipate market changes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Extract meaningful insights from text data through sentiment analysis, topic modeling, and automated content analysis to understand customer feedback.</p>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Chatbots</h3>
+                    <p>Design and implement intelligent chatbots that enhance customer experience, automate support processes, and provide 24/7 assistance.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="AI Brain" class="brain-img">
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Develop custom machine learning models that automate processes, improve accuracy, and unlock new opportunities for business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Some of my work</p>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine learning</button>
+                <button class="filter-btn" data-filter="ui">UI</button>
+                <button class="filter-btn" data-filter="react">React JS</button>
+                <button class="filter-btn" data-filter="python">PYTHON</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="ui react">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project name/description</h3>
+                        <p>Technology used - React</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui react">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project name/description</h3>
+                        <p>Technology used - React</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="python data-science">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project name/description</h3>
+                        <p>Technology used - Python</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="machine-learning python">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Educational Platform</h3>
+                        <p>Technology used - Python</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="machine-learning python">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Educational Platform</h3>
+                        <p>Technology used - Python</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui react">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Educational Platform</h3>
+                        <p>Technology used - React</p>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <button class="btn-secondary">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="data-analytics">Data Analytics & Visualization</option>
+                        <option value="predictive-analytics">Predictive Analytics</option>
+                        <option value="nlp">Natural Language Processing</option>
+                        <option value="ai-chatbots">AI Chatbots</option>
+                        <option value="machine-learning">Machine Learning</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Get In Touch</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h3>Let's Work Together -</h3>
+                    <p>© 2024 All rights reserved.</p>
+                </div>
+                <div class="footer-contact">
+                    <span>📧 Georgy@gmail.com</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
