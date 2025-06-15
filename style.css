@@ -236,8 +236,8 @@ body {
     width: 100%;
 }
 
-/* About Section */
-.about {
+/* sobre Section */
+.sobre {
     padding: 80px 0;
     background-color: var(--bg-secondary);
 }
@@ -249,21 +249,21 @@ body {
     color: var(--text-primary);
 }
 
-.about-content {
+.sobre-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.about-content p {
+.sobre-content p {
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
-/* Services Section */
-.services {
+/* servicos Section */
+.servicos {
     padding: 80px 0;
 }
 
@@ -273,7 +273,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.services-grid {
+.servicos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -341,8 +341,8 @@ body {
     border-radius: 10px;
 }
 
-/* Projects Section */
-.projects {
+/* projetos Section */
+.projetos {
     padding: 80px 0;
     background-color: var(--bg-secondary);
 }
@@ -372,7 +372,7 @@ body {
     border-color: var(--accent-primary);
 }
 
-.projects-grid {
+.projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -578,11 +578,11 @@ body {
         font-size: 2rem;
     }
     
-    .services-grid {
+    .servicos-grid {
         grid-template-columns: 1fr;
     }
     
-    .projects-grid {
+    .projetos-grid {
         grid-template-columns: 1fr;
     }
     
@@ -623,9 +623,9 @@ body {
         height: 120px;
     }
     
-    .services,
-    .projects,
-    .about,
+    .servicos,
+    .projetos,
+    .sobre,
     .contact {
         padding: 60px 0;
     }
