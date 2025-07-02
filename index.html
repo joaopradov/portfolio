@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joao Prado - Dev</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Joao Prado - Portfolio</title>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
                 <span>JVP</span>
             </div>
+
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li><a href="#curriculo" class="nav-link">Curriculo</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
+
             <div class="nav-actions">
-                <a href="#contact" class="btn-contact">Contato</a>
+                <a href="#curriculo" class="btn-curriculo">Currículo</a>
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-sun"></i>
                 </button>
             </div>
-            <div class="hamburger" id="hamburger">
+
+            <div class="hamburguer" id="hamburguer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,41 +39,28 @@
         </nav>
     </header>
 
-
-    <section id="inicio" class="hero">
+    <section id="inicio" class="inicio">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-avatar">
-                    <img src="assets/Avatar.png" alt="João Vitor Prado" class="avatar-img">
+                    <img src="assets/Avatar.png" alt="Avatar do João Vitor Prado" class="avatar-img">
                 </div>
                 <h1 class="hero-title">João Vitor Prado</h1>
                 <p class="hero-subtitle">Dev FrontEnd</p>
                 <p class="hero-description">
                     Desenvolvedor focado em criar aplicações modernas, funcionais e bem feitas. Valorizo boas práticas, estou sempre aprendendo novas tecnologias e busco entregar soluções que realmente fazem a diferença para cada projeto.
                 </p>
-                <a href="#contact" class="btn-primary">Contato</a>
+                <a href="#contato" class="btn-primary">Contato</a>
             </div>
         </div>
     </section>
 
-    <!-- sobre Section -->
-    <section id="sobre" class="sobre">
+    <section class="sobre" id="sobre">
         <div class="container">
-            <h2 class="section-title">Tech Skills</h2>
-            <div class="sobre-content">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-git-alt"></i>
-                <i class="fab fa-trello"></i>
-                <i class="fab fa-figma"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-            </div>
-
             <h2 class="section-title">Sobre Mim</h2>
             <div class="sobre-content">
                 <p>
-                    Olá! Sou João Vitor Prado, desenvolvedor front-end em formação, com foco na criação de interfaces modernas, funcionais e centradas na experiência do usuário. Atualmente, curso Análise e Desnvolvimento de Sistemas e venho aplicando meus conhecimentos em projetos práticos que demonstram minha capacidade de transformar ideias em aplicações web intuitivas e responsivas.
+                    Olá! Sou João Vitor Prado, desenvolvedor front-end em formação, com foco na criação de interfaces modernas, funcionais e centradas na experiência do usuário. Atualmente, curso Análise e Desenvolvimento de Sistemas e venho aplicando meus conhecimentos em projetos práticos que demonstram minha capacidade de transformar ideias em aplicações web intuitivas e responsivas.
                 </p>
                 <p>
                     Tenho familiaridade com ferramentas e tecnologias fundamentais para o desenvolvimento front-end, como HTML5, CSS3, JavaScript, Git, GitHub, Trello e Figma. Busco constantemente aprimorar minhas habilidades técnicas e de organização, aliando boas práticas de desenvolvimento com atenção aos detalhes visuais e estruturais das interfaces.
@@ -80,205 +71,153 @@
                 <p>
                     Estou sempre disposto a aprender, colaborar em equipe e enfrentar novos desafios. Vejo no desenvolvimento front-end uma área em constante evolução e tenho como objetivo crescer profissionalmente contribuindo com soluções de qualidade e propósito.
                 </p>
+            </div>
+
+            <h2 class="section-title2">Tech Skills</h2>
+            <div class="sobre-content">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-git-alt"></i>
+                <i class="fab fa-trello"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+
                 <button class="btn-secondary">Download curriculo</button>
             </div>
         </div>
     </section>
 
-    <!-- servicos Section -->
-    <section id="servicos" class="servicos">
+    <section class="servicos" id="servicos">
         <div class="container">
-            <h2 class="section-title">What I Do</h2>
-            <p class="section-subtitle">My servicos</p>
+            <h2 class="section-title2">O que eu faço</h2>
+            <p class="section-subtitle">Meus serviços</p>
             <div class="servicos-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-bar"></i>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-object-group"></i>
                     </div>
-                    <h3>Data Analytics & Visualization</h3>
-                    <p>Transform complex data into clear, actionable insights through advanced analytics and compelling visualizations that drive informed decision-making.</p>
+                    <h3>Design de Interfaces</h3>
+                    <p>Desenvolvo interfaces modernas e intuitivas, com foco na usabilidade e na estética, garantindo que cada elemento contribua para uma navegação fluida e agradável.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Predictive Analytics and Forecasting</h3>
-                    <p>Leverage statistical models and machine learning algorithms to predict future trends, optimize operations, and anticipate market changes.</p>
+                    <h3>Desenvolvimento de Sites</h3>
+                    <p>Crio sites completos e responsivos, desde páginas institucionais até landing pages, com atenção à estrutura, visual e boa experiência em qualquer dispositivo.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-language"></i>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Natural Language Processing</h3>
-                    <p>Extract meaningful insights from text data through sentiment analysis, topic modeling, and automated content analysis to understand customer feedback.</p>
+                    <h3>Manutenção e Melhorias</h3>
+                    <p>Faço atualizações, correções e melhorias em sites já existentes, cuidando desde pequenos ajustes até otimizações para melhor desempenho.</p>
                 </div>
-                <div class="service-card featured">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI Chatbots</h3>
-                    <p>Design and implement intelligent chatbots that enhance customer experience, automate support processes, and provide 24/7 assistance.</p>
-                    <div class="service-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="AI Brain" class="brain-img">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Develop custom machine learning models that automate processes, improve accuracy, and unlock new opportunities for business growth.</p>
-                </div>
+
+                <!-- Para cada serviço adicionar um card -->
+
             </div>
         </div>
     </section>
 
-    <!-- projetos Section -->
-    <section id="projetos" class="projetos">
+    <section class="projetos" id="projetos">
         <div class="container">
-            <h2 class="section-title">projetos</h2>
-            <p class="section-subtitle">Some of my work</p>
-            
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="machine-learning">Machine learning</button>
-                <button class="filter-btn" data-filter="ui">UI</button>
-                <button class="filter-btn" data-filter="react">React JS</button>
-                <button class="filter-btn" data-filter="python">PYTHON</button>
-                <button class="filter-btn" data-filter="data-science">Data Science</button>
+            <h2 class="section-title">Projetos</h2>
+            <p class="section-subtitle">Alguns Trabalhos</p>
+
+            <div class="projetos-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <!-- Se acrescentar algum framework colocar filtro!! -->
             </div>
 
             <div class="projetos-grid">
-                <div class="project-card" data-category="ui react">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Project 1">
+                <div class="projeto-card" data-category="">
+                    <div class="projeto-imagem">
+                        <img src="" alt="Projeto 1">
                     </div>
-                    <div class="project-info">
-                        <h3>Project name/description</h3>
-                        <p>Technology used - React</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
+                    <div class="projeto-info">
+                        <h3>Nome do projeto</h3>
+                        <p>Tecnologia ou Descrição breve</p>
+                        <div class="projeto-status">
+                            <span class="status-ponto"></span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="ui react">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Project 2">
+
+                <div class="projeto-card" data-category="">
+                    <div class="projeto-imagem">
+                        <img src="" alt="Projeto 2">
                     </div>
-                    <div class="project-info">
-                        <h3>Project name/description</h3>
-                        <p>Technology used - React</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
+                    <div class="projeto-info">
+                        <h3>Nome do projeto</h3>
+                        <p>Tecnologia ou Descrição breve</p>
+                        <div class="projeto-status">
+                            <span class="status-ponto"></span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="python data-science">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project name/description</h3>
-                        <p>Technology used - Python</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="machine-learning python">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
-                    </div>
-                    <div class="project-info">
-                        <h3>Educational Platform</h3>
-                        <p>Technology used - Python</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="machine-learning python">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
-                    </div>
-                    <div class="project-info">
-                        <h3>Educational Platform</h3>
-                        <p>Technology used - Python</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ui react">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Educational Platform">
-                    </div>
-                    <div class="project-info">
-                        <h3>Educational Platform</h3>
-                        <p>Technology used - React</p>
-                        <div class="project-status">
-                            <span class="status-dot"></span>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- Para cada projeto colocar um card
+                o data-category usar quando colocar mais filtros / frameworks -->
             </div>
-            
-            <div class="view-all">
-                <button class="btn-secondary">View All</button>
+
+            <div class="ver-todos">
+                <button class="btn-secondary">Ver Todos</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contato" id="contato">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form">
+            <h2 class="section-title">Entre em contato</h2>
+            <form action="" class="contato-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="e.g. example@email.com" required>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Full name" required>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="service">Service</label>
-                    <select id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="data-analytics">Data Analytics & Visualization</option>
-                        <option value="predictive-analytics">Predictive Analytics</option>
-                        <option value="nlp">Natural Language Processing</option>
-                        <option value="ai-chatbots">AI Chatbots</option>
-                        <option value="machine-learning">Machine Learning</option>
+                    <label for="servico">Serviço</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="design-interface">Design de Interfaces</option>
+                        <option value="desenvolvimento-site">Desenvolvimento de Sites</option>
+                        <option value="manutencao-melhorias">Manutenção e Melhorias</option>
+                        <!-- Para cada tipo de serviço que eu for prestar adicionar um option -->
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sobre o projeto aqui..." required></textarea>
                 </div>
-                <button type="submit" class="btn-primary full-width">Get In Touch</button>
+                <button type="submit" class="btn-primary full-width">Entre em contato</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <h3>Let's Work Together</h3>
-                    <p>© 2025 Todos os direitos reservados.</p>
+                    <h3>Vamos trabalhar juntos!</h3>
+                    <p>© 2025 <span class="autor"> João Prado </span>Todos os direitos reservados.</p>
                 </div>
+
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/joaopradov" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/joaopradov" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/joaopradov" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
