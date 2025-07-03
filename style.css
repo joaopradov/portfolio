@@ -353,6 +353,11 @@ body{
     margin-bottom: 3rem;
 }
 
+.projetos-grid a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
 .projeto-card{
     background-color: var(--bg-card);
     border-radius: 15px;
