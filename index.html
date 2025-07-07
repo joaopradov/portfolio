@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joao Prado - Portfolio</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +26,7 @@
             </ul>
 
             <div class="nav-actions">
-                <a href="#curriculo" class="btn-curriculo">Currículo</a>
+                <a href="#curriculo" class="btn-curriculo">Download Currículo</a>
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -83,7 +84,7 @@
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
 
-                <button class="btn-secondary">Download curriculo</button>
+                <button class="btn-secondary">Download Currículo</button>
             </div>
         </div>
     </section>
@@ -194,7 +195,9 @@
     <section class="contato" id="contato">
         <div class="container">
             <h2 class="section-title">Entre em contato</h2>
-            <form action="" class="contato-form">
+            <form action="https://formsubmit.co/joaovitorconstantino@alunos.utfpr.edu.br" method="post"  class="contato-form">
+                <input type="hidden" name="_captcha" value="false">
+
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
@@ -238,6 +241,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
