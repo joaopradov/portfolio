@@ -121,12 +121,12 @@ contatoForm.addEventListener('submit', (e) => {
     const mensagem = contatoForm.querySelector('[name="mensagem"]').value.trim();
 
     if (!nome || !email || !servico || !mensagem) {
+        e.preventDefault();
         alert('Por favor, preencha todos os campos!');
         return;
     }
 
     alert('Obrigado pela sua mensagem! Eu retornarei o mais breve possível!');
-    contatoForm.reset();
 });
 
 
