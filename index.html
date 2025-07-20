@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joao Prado - Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>JVP - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
-    
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
@@ -26,7 +23,7 @@
             </ul>
 
             <div class="nav-actions">
-                <a href="#curriculo" class="btn-curriculo">Download Currículo</a>
+                <a href="#curriculo" class="btn-curriculo">Currículo</a>
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -44,7 +41,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-avatar">
-                    <img src="src/img/Avatar.png" alt="Avatar do João Vitor Prado" class="avatar-img">
+                    <img src="./src/imgs/Avatar.png" alt="Avatar do João Vitor Prado" class="avatar-img">
                 </div>
                 <h1 class="hero-title">João Vitor Prado</h1>
                 <p class="hero-subtitle">Desenvolvedor Fullstack</p>
@@ -94,7 +91,7 @@
 
     <section class="servicos" id="servicos">
         <div class="container">
-            <h2 class="section-title2">O que eu faço</h2>
+            <h2 class="section-title2">O que eu faço!</h2>
             <div class="servicos-grid">
 
                 <div class="servico-card">
@@ -102,7 +99,7 @@
                         <i class="fas fa-object-group"></i>
                     </div>
                     <h3>Design de Interfaces</h3>
-                    <p>Desenvolvo interfaces modernas e intuitivas, com foco na usabilidade e na estética, garantindo que cada elemento contribua para uma navegação fluida e agradável.</p>
+                    <p>Crio interfaces modernas, intuitivas e responsivas, com foco em usabilidade e estética, garantindo uma navegação fluida e agradável em todos os dispositivos.</p>
                 </div>
 
                 <div class="servico-card">
@@ -110,7 +107,7 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Desenvolvimento de Sites</h3>
-                    <p>Crio sites completos e responsivos, desde páginas institucionais até landing pages, com atenção à estrutura, visual e boa experiência em qualquer dispositivo.</p>
+                    <p>Desenvolvo sites completos do zero, integrando front-end e back-end, com foco em performance, segurança e estrutura escalável.</p>
                 </div>
 
                 <div class="servico-card">
@@ -118,11 +115,26 @@
                         <i class="fas fa-tools"></i>
                     </div>
                     <h3>Manutenção e Melhorias</h3>
-                    <p>Faço atualizações, correções e melhorias em sites já existentes, cuidando desde pequenos ajustes até otimizações para melhor desempenho.</p>
+                    <p>Realizo correções, atualizações e otimizações em sistemas e sites já existentes, melhorando desempenho, acessibilidade e compatibilidade.</p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Desenvolvimento Back-end</h3>
+                    <p>Construo APIs, gerencio banco de dados e implemento regras de negócio usando tecnologias como Java e MySQL, garantindo segurança e eficiência nas aplicações.</p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Integração de Sistemas</h3>
+                    <p>Integro APIs e serviços externos (REST, JSON), conectando diferentes plataformas e criando soluções completas e automatizadas.</p>
                 </div>
 
                 <!-- Para cada serviço adicionar um card -->
-
             </div>
         </div>
     </section>
@@ -133,58 +145,47 @@
 
             <div class="projetos-filter">
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <!-- Se acrescentar algum framework colocar filtro!! -->
+                <button class="filter-btn " data-filter="all Html5">Html5</button>
+                <button class="filter-btn " data-filter="all Sql">Sql</button>
+                <!-- A cada linguagem colocada, acrescentar botões com o nome da linguagem/framework -->
             </div>
 
             <div class="projetos-grid">
-
-                <div class="projeto-card" data-category="">
-                        <a href="https://joaopradov.github.io/ProjetosAcademicos/Cursos/Fullstack/projeto-zingen/" target="_blank">
+                <div class="projeto-card" data-category="Html5">
+                    <a href="">
                         <div class="projeto-imagem">
-                            <img src="src/img/projetos/Projeto-Zingen.png" alt="Projeto Zingen">
+                            <img src="./src/imgs/Projetos/Projeto-Zingen.png" alt="Projeto-Zingen">
                         </div>
+
                         <div class="projeto-info">
                             <h3>Zingen - App Karaokê</h3>
                             <p>Tecnologias: HTML5, CSS3</p>
-                            <div class="projeto-status">
-                                <span class="status-ponto"></span>
+                            <div class="projeto-description">
+                                <span class="ponto"></span>
+                                <i class="fa-solid fa-arrow-up icon"></i>
                             </div>
                         </div>
                     </a>
                 </div>
 
                 <div class="projeto-card" data-category="">
-                    <a href="" target="_blank">
+                    <a href="">
                         <div class="projeto-imagem">
-                            <img src="" alt="Projeto 2">
+                            <img src="" alt="">
                         </div>
+
                         <div class="projeto-info">
-                            <h3>Nome do projeto</h3>
-                            <p>Tecnologia ou Descrição breve</p>
-                            <div class="projeto-status">
-                                <span class="status-ponto"></span>
+                            <h3>Nome Projeto</h3>
+                            <p>Tecnologias</p>
+                            <div class="projeto-description">
+                                <span class="ponto"></span>
+                                <i class="fa-solid fa-arrow-up icon"></i>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="projeto-card" data-category="">
-                    <a href="" target="_blank">
-                        <div class="projeto-imagem">
-                            <img src="" alt="Projeto 3">
-                        </div>
-                        <div class="projeto-info">
-                            <h3>Nome do projeto</h3>
-                            <p>Tecnologia ou Descrição breve</p>
-                            <div class="projeto-status">
-                                <span class="status-ponto"></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Para cada projeto colocar um card
-                o data-category usar quando colocar mais filtros / frameworks -->
+                <!-- Para cada projeto adicionar um card... -->
             </div>
 
             <div class="ver-todos">
@@ -195,17 +196,19 @@
 
     <section class="contato" id="contato">
         <div class="container">
-            <h2 class="section-title">Entre em contato</h2>
-            <form action="https://getform.io/f/aejldqkb" method="post"  class="contato-form">
+            <h2 class="section-title">Entre em Contato</h2>
 
+            <form action="" method="post" class="contato-form">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="email@email.com" required>
                 </div>
+
                 <div class="form-group">
                     <label for="servico">Serviço</label>
                     <select id="servico" name="servico" required>
@@ -213,9 +216,12 @@
                         <option value="design-interface">Design de Interfaces</option>
                         <option value="desenvolvimento-site">Desenvolvimento de Sites</option>
                         <option value="manutencao-melhorias">Manutenção e Melhorias</option>
+                        <option value="desenvolvimento-back-end">Desenvolvimento Back-end</option>
+                        <option value="integracao-de-sistemas">Integração de Sistemas</option>
                         <!-- Para cada tipo de serviço que eu for prestar adicionar um option -->
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sobre o projeto aqui..." required></textarea>
@@ -230,7 +236,7 @@
             <div class="footer-content">
                 <div class="footer-text">
                     <h3>Vamos trabalhar juntos!</h3>
-                    <p>© 2025 <span class="autor"> João Prado </span>Todos os direitos reservados.</p>
+                    <p>© 2025 <span class="autor"> João Prado. </span>Todos os direitos reservados.</p>
                 </div>
 
                 <div class="footer-social">
@@ -242,7 +248,6 @@
         </div>
     </footer>
 
-    <script src="src/scripts/script.js"></script>
-
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
