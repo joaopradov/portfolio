@@ -82,6 +82,7 @@ html{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-nav);
+    cursor: default;
 }
 
 .nav-menu{
@@ -334,12 +335,6 @@ html{
 .projetos {
     padding: 80px 0;
     background-color: var(--bg-secondary);
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--text-muted);
-    margin-bottom: 3rem;
 }
 
 .projetos-filter{

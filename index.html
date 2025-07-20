@@ -7,7 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
     
@@ -44,12 +44,12 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-avatar">
-                    <img src="assets/Avatar.png" alt="Avatar do João Vitor Prado" class="avatar-img">
+                    <img src="src/img/Avatar.png" alt="Avatar do João Vitor Prado" class="avatar-img">
                 </div>
                 <h1 class="hero-title">João Vitor Prado</h1>
-                <p class="hero-subtitle">Dev FrontEnd</p>
+                <p class="hero-subtitle">Desenvolvedor Fullstack</p>
                 <p class="hero-description">
-                    Desenvolvedor focado em criar aplicações modernas, funcionais e bem feitas. Valorizo boas práticas, estou sempre aprendendo novas tecnologias e busco entregar soluções que realmente fazem a diferença para cada projeto.
+                    Crio aplicações modernas, funcionais e bem estruturadas, do Front ao Back-end. Valorizo boas práticas, estou sempre aprendendo novas tecnologias e busco entregar soluções completas que geram valor real para cada projeto.
                 </p>
                 <a href="#contato" class="btn-primary">Contato</a>
             </div>
@@ -61,28 +61,31 @@
             <h2 class="section-title">Sobre Mim</h2>
             <div class="sobre-content">
                 <p>
-                    Olá! Sou João Vitor Prado, desenvolvedor front-end em formação, com foco na criação de interfaces modernas, funcionais e centradas na experiência do usuário. Atualmente, curso Análise e Desenvolvimento de Sistemas e venho aplicando meus conhecimentos em projetos práticos que demonstram minha capacidade de transformar ideias em aplicações web intuitivas e responsivas.
+                    Olá! Sou João Vitor Prado, desenvolvedor web em formação, com foco na criação de aplicações completas — do front-end ao back-end — modernas, funcionais e centradas na experiência do usuário. Atualmente, curso Análise e Desenvolvimento de Sistemas e venho aplicando meus conhecimentos em projetos práticos que demonstram minha capacidade de transformar ideias em soluções web intuitivas, responsivas e eficientes.
                 </p>
                 <p>
-                    Tenho familiaridade com ferramentas e tecnologias fundamentais para o desenvolvimento front-end, como HTML5, CSS3, JavaScript, Git, GitHub, Trello e Figma. Busco constantemente aprimorar minhas habilidades técnicas e de organização, aliando boas práticas de desenvolvimento com atenção aos detalhes visuais e estruturais das interfaces.
+                    Tenho familiaridade com ferramentas e tecnologias fundamentais do desenvolvimento web, como HTML5, CSS3, JavaScript, Java, MySQL, Git, GitHub, Trello e Figma. Busco constantemente aprimorar minhas habilidades técnicas e organizacionais, aliando boas práticas de programação com atenção aos detalhes visuais, estruturais e lógicos das aplicações.
                 </p>
                 <p>
-                    Minha abordagem valoriza um código limpo, semântico e eficiente, além de uma forte preocupação com a usabilidade, acessibilidade e performance. Acredito que o front-end vai além do visual — trata-se de entregar experiências reais e funcionais que impactam diretamente a forma como as pessoas interagem com o digital.
+                    Minha abordagem valoriza um código limpo, semântico e eficiente, com forte preocupação com usabilidade, acessibilidade, performance e segurança. Acredito que desenvolver para a web vai além de escrever código — trata-se de criar experiências reais, funcionais e integradas que impactam diretamente a forma como as pessoas interagem com o digital.
                 </p>
                 <p>
-                    Estou sempre disposto a aprender, colaborar em equipe e enfrentar novos desafios. Vejo no desenvolvimento front-end uma área em constante evolução e tenho como objetivo crescer profissionalmente contribuindo com soluções de qualidade e propósito.
+                    Estou sempre disposto a aprender, colaborar em equipe e enfrentar novos desafios. Vejo no desenvolvimento web uma área em constante evolução, e tenho como objetivo crescer profissionalmente contribuindo com soluções de qualidade, propósito e impacto.
                 </p>
             </div>
 
             <h2 class="section-title2">Tech Skills</h2>
             <div class="sobre-content">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-git-alt"></i>
-                <i class="fab fa-trello"></i>
-                <i class="fab fa-figma"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
+                <i class="fab fa-html5 skills" title="HTML5"></i>
+                <i class="fab fa-css3-alt skills" title="CSS3"></i>
+                <i class="fab fa-js skills" title="JavaScript"></i>
+                <i class="fab fa-java skills" title="Java"></i>
+                <i class="fab fa-python skills" title="Python"></i>
+                <i class="fas fa-database skills" title="MySQL"></i>
+                <i class="fab fa-git-alt skills" title="Git"></i>
+                <i class="fab fa-github skills" title="GitHub"></i>
+                <i class="fab fa-trello skills" title="Trello"></i>
+                <i class="fab fa-figma skills" title="Figma"></i>
 
                 <button class="btn-secondary">Download Currículo</button>
             </div>
@@ -92,7 +95,6 @@
     <section class="servicos" id="servicos">
         <div class="container">
             <h2 class="section-title2">O que eu faço</h2>
-            <p class="section-subtitle">Meus serviços</p>
             <div class="servicos-grid">
 
                 <div class="servico-card">
@@ -128,7 +130,6 @@
     <section class="projetos" id="projetos">
         <div class="container">
             <h2 class="section-title">Projetos</h2>
-            <p class="section-subtitle">Alguns Trabalhos</p>
 
             <div class="projetos-filter">
                 <button class="filter-btn active" data-filter="all">Todos</button>
@@ -140,7 +141,7 @@
                 <div class="projeto-card" data-category="">
                         <a href="https://joaopradov.github.io/ProjetosAcademicos/Cursos/Fullstack/projeto-zingen/" target="_blank">
                         <div class="projeto-imagem">
-                            <img src="./assets/projetos/Projeto-Zingen.png" alt="Projeto Zingen">
+                            <img src="src/img/projetos/Projeto-Zingen.png" alt="Projeto Zingen">
                         </div>
                         <div class="projeto-info">
                             <h3>Zingen - App Karaokê</h3>
@@ -241,7 +242,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="src/scripts/script.js"></script>
 
 </body>
 </html>
