@@ -111,3 +111,7 @@
     background-color: var(--borda);
     color: var(--text-color-principal);
 }
+
+.hidden {
+    opacity: 0;
+}
