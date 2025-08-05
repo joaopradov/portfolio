@@ -1,0 +1,58 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+
+    --bg-primario: #1A1A1A;
+    --bg-icones: #F5F8FF;
+    --bg-gradiente: linear-gradient(45deg, #282828, #202020);
+
+    --hover: #4299C0;
+    --hover-filtro: #484E53;
+
+    --borda: #363636;
+    --borda-botao: #4299C0;
+
+    --text-color-principal: #FFFFFF;
+    --text-color-secundario: #C5C5C5;
+    --text-color-gradiente: linear-gradient(90deg, var(--hover), var(--text-color-principal));
+}
+
+[data-theme="light"] {
+    --font-family: 'Poppins', sans-serif;
+
+    --bg-primario: #E0E8F6;
+    --bg-icones: #BCE7FA;
+    --bg-gradiente: linear-gradient(45deg, #E5EDFB, #EEF6FF);
+
+    --hover: #4299C0;
+    --hover-filtro: #484E53;
+
+    --borda: #FFFFFF;
+    --borda-botao: #484E53;
+
+    --text-color-principal: #2B2B2B;
+    --text-color-secundario: #484E53;
+    --text-color-gradiente: linear-gradient(90deg, var(--hover), var(--text-color-principal));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primario);
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}

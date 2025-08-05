@@ -1,0 +1,113 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-primario);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color-principal);
+    cursor: default;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-color-secundario);
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--hover);
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--hover);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-curriculo {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: var(--text-color-secundario);
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    border: 1px solid var(--hover);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-curriculo:hover {
+    background-color: var(--hover);
+    color: var(--bg-primario);
+    scale: 1.05;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color-secundario);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--hover);
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburguer span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color-secundario);
+    transition: all 0.3s ease;
+}
