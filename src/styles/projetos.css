@@ -1,0 +1,120 @@
+.projetos {
+    padding: 2.5rem 0;
+}
+
+.projetos-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--text-color-secundario);
+    border: 2px solid var(--borda);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--borda);
+    color: var(--text-color-principal);
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.projetos-grid a{
+    text-decoration: none;
+}
+
+.projeto-card{
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--borda);
+}
+
+.projeto-card:hover {
+    scale: 1.05;
+}
+
+.projeto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projeto-info {
+    text-align: justify;
+    position: relative;
+    padding: 1.5rem;
+    line-height: 2;
+}
+
+.projeto-info h3 {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+    max-width: 90%;
+    line-height: 1.5;
+    color: var(--text-color-principal);
+}
+
+.projeto-info p {
+    font-size: .875rem;
+    font-weight: 400;
+    color: var(--text-color-secundario);
+}
+
+.projeto-description {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.ponto {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--hover);
+    position: relative;
+    border-radius: 50%;
+    display: block;
+}
+
+.icon {
+    font-size: 1.5rem;
+    top: 0.5rem;
+    right: 0.7rem;
+    rotate: 45deg;
+    position: absolute;
+    color: var(--text-color-principal);
+}
+
+.btn-secondary {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: var(--text-color-secundario);
+    border: 2px solid var(--borda);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--borda);
+    color: var(--text-color-principal);
+}
+
+.hidden {
+    opacity: 0;
+}
