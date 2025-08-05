@@ -1,0 +1,83 @@
+.inicio {
+    padding: 7.5rem 0 5rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.hero-avatar {
+    margin-bottom: 2rem;
+}
+
+.avatar-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: 4px solid var(--hover);
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--text-color-principal);
+}
+
+.hero-subtitle {
+    font-size: 1.65rem;
+    font-weight: 600;
+    background: var(--text-color-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1875rem;
+    font-weight: 500;
+    color: var(--text-color-secundario);
+    text-align: justify center;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color-principal);
+    border: 2px solid var(--hover);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    margin-top: 1.5rem;
+
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover);
+    color: var(--bg-principal);
+    scale: 1.05;
+}
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
