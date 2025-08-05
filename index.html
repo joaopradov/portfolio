@@ -199,6 +199,41 @@
         </div>
     </section>
 
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+
+            <form action="" method="post" class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Serviço</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="prototipacao-de-interfaces">Prototipação de Interfaces</option>
+                        <option value="desenvolvimento-de-interfaces">Desenvolvimento de Interfaces</option>
+                        <option value="otimizacao-e-melhorias">Otimização e Melhorias</option>
+                        <!-- Para cada tipo de serviço que eu for prestar adicionar um option -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sobre o projeto aqui..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Entre em contato</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
