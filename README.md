@@ -6,7 +6,8 @@ Este repositório contém o código-fonte do meu portfólio profissional, onde a
 
 Você pode visualizar o portfólio online através do link abaixo:
 
-➡️<a href="https://joaopradov.github.io/portfolio/" target="_blank">Clique aqui para acessar o portfólio</a>
+➡️ [Clique aqui para acessar o portfólio](https://joaopradov.github.io/portfolio/)
+
 
 ## 🛠️ Tecnologias utilizadas
 
